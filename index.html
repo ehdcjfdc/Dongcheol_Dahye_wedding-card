@@ -72,7 +72,10 @@
 
             let result = date - currentDate;
             let misec = 24 * 60 * 60 * 1000;
-
+	    console.log(date);
+	    console.log(currentDate);
+	    console.log(result);
+	    console.log((parseInt(result / misec));
             result = (result <= 0)? 0 : (parseInt(result / misec) + 1);
 
             $("#d-day").html(result);
